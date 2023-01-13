@@ -1,0 +1,19 @@
+@use "../abstracts/index" as*;
+
+.accordion-item {
+    background-color: $clr-pale-pink; 
+}
+.accordion-button { 
+    background-color: $clr-soft-pink;
+    color: $clr-pale-pink;
+    &:focus {
+        background-color: $clr-soft-pink;
+        color: $clr-white;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    }
+    &:active {
+        background-color: $clr-soft-pink;
+    }
+}
+  
+

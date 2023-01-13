@@ -1,0 +1,40 @@
+@use "../abstracts/index" as*;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.h1 {
+  font-family: 'Monoton', cursive;
+  margin-bottom: 0;
+}
+nav {
+    background-color: $clr-soft-pink;
+}
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+        gap: 2rem;
+    }
+    }
+.flower {
+    transform-origin: 50% 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $clr-pale-pink;
+    box-shadow: -12px -12px 0 2px #b259b3, 12px -12px 0 2px #c782c8, 12px 12px 0 2px #b573b6, -12px 12px 0 2px #aa62ab;
+    animation: flowerKeyframes 5s infinite ease-in-out;
+  }
+  
+  @keyframes flowerKeyframes {
+    0% {
+      transform: rotate(0deg);
+      box-shadow: -12px -12px 0 2px #eab0eb, 12px -12px 0 2px #eab0eb, 12px 12px 0 2px #eab0eb, -12px 12px 0 2px #eab0eb;
+    }
+    
+    50% {
+      transform: rotate(1080deg);
+      box-shadow: 12px 12px 0 2px #eab0eb, -12px 12px 0 2px #eab0eb, -12px -12px 0 2px #eab0eb, 12px -12px 0 2px #eab0eb;
+    }
+  }

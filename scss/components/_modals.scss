@@ -1,0 +1,8 @@
+@use "../abstracts/index" as*;
+
+.modal-header {
+    gap: 2rem;
+}
+.modal-footer {
+    justify-content: space-around
+}

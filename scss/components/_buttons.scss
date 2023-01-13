@@ -1,0 +1,37 @@
+@use "../abstracts/index" as*;
+
+.btn {
+    border: 1px solid $clr-dark-pink;
+    color: $clr-dark-pink;
+    &:hover {
+        background-color: $clr-dark-pink;
+        color: $clr-white;
+        border: 1px solid $clr-pale-pink;
+        opacity: 0.7;
+        -webkit-transform:scale(1.15);
+        -moz-transform:scale(1.15);
+        -ms-transform:scale(1.15);
+        -o-transform:scale(1.15);
+        transform:scale(1.15);
+    }
+    &-primary {
+        background-color: $clr-soft-pink;
+        color: $clr-white;
+        border: 1px solid $clr-dark-pink;
+        &:hover {
+        background-color: $clr-pale-pink;
+        color: $clr-dark-pink;
+    }
+    }
+    &-light {
+        background-color: $clr-soft-pink;
+        color: $clr-white;
+        border: 1px solid $clr-dark-pink;
+    }
+    &-dark {
+        background-color: rgb(154, 141, 155);
+        color: rgb(31, 22, 31);
+    }
+  }
+
+
